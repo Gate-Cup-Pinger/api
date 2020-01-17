@@ -36,6 +36,12 @@ module.exports = {
 	TrimExtraZeros(num) {
 		return TrimExtraZeros(num)
 	},
+	ToFixedTwo(num) {
+		return parseFloat(num, 10).toFixed(2)
+	},
+	ToFixedOne(num) {
+		return parseFloat(num, 10).toFixed(1)
+	},
 	MigaNumber(num) {
 		if (num / 10000000 > 1) {
 			return `${TrimExtraZeros((num / 10000000).toFixed(2))}M`

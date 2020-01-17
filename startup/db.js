@@ -21,6 +21,6 @@ module.exports = function() {
 	mongoose.connect(db, { useNewUrlParser: true })
 		.then(() => console.log(`Connected to ${db}...`))
 }
-
+mongoose.set('useUnifiedTopology', true)
 mongoose.set('useCreateIndex', true)
 mongoose.set('useFindAndModify', false)
